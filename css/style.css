@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: bisque;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   background-image: url("../data/mushoku1.jpg");
   background-position: center;
   background-size: cover;
@@ -27,7 +27,7 @@ body {
   border-radius: 5px;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  transform: translate(-100px, -160px);
+  transform: translate(-110px, -180px);
 }
 
 .win:hover {
