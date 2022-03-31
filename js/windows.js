@@ -48,3 +48,27 @@ function minimize() {
   let min = document.getElementById("calcWin");
   min.classList.toggle("minimize");
 }
+
+function theme() {
+  let bg = document.querySelector("body");
+  bg.classList.toggle("darkMode");
+
+  let btn = document.querySelectorAll("button.btn");
+  btn.forEach((element) => {
+    element.classList.toggle("btn-dark");
+  });
+  let display = document.querySelector("div.calc div.display");
+  display.classList.toggle("display-dark");
+
+  let calc = document.getElementById("calcWin");
+  calc.classList.toggle("win-dark");
+
+  let min = document.getElementById("minimize");
+  min.classList.toggle("btn-dark");
+
+  let exit = document.getElementById("exit");
+  exit.classList.toggle("btn-dark");
+
+  let max = document.getElementById("maximize");
+  max.classList.toggle("btn-dark");
+}
