@@ -14,9 +14,9 @@
         <div class="nav" id="calcWinHeader">
           <p>Kalkulator</p>
           <div class="nav-btn">
-            <button class="btn-win min">-</button>
-            <button class="btn-win disabled max" disabled>+</button>
-            <button class="btn-win close">×</button>
+            <button class="btn-win min" id="minimize" onclick="minimize()">-</button>
+            <button class="btn-win disabled max" disabled id="maximize">+</button>
+            <button class="btn-win close" id="exit" onclick="exit()">×</button>
           </div>
         </div>
         <div class="calc">

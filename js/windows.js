@@ -50,3 +50,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+function minimize() {
+  let min = document.querySelector("div.calc");
+  min.classList.toggle("minimize");
+}
