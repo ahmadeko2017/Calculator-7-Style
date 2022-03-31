@@ -14,21 +14,11 @@ function dragElement(elmnt) {
     elmnt.onmousedown = dragMouseDown;
   }
 
-  pos3 = parseInt(elmnt.style.left);
-  pos4 = parseInt(elmnt.style.top);
   elmnt.addEventListener("touchmove", function (e) {
     var touchLocation = e.targetTouches[0];
-    pos1 = pos3 - touchLocation.pageX;
-    pos2 = pos4 - touchLocation.pageY;
-    pos3 = touchLocation.pageX;
-    pos4 = touchLocation.pageY;
-
-    elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-    elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+    elmnt.style.top = touchLocation.pageY + "px";
+    elmnt.style.left = touchLocation.pageX + "px";
   });
-  /* record the position of the touch
-    when released using touchend event.
-    This will be the drop position. */
 
   function dragMouseDown(e) {
     e = e || window.event;
