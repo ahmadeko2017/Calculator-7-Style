@@ -4,7 +4,7 @@ let temp = [];
 let toggle = true;
 
 function op(a, b) {
-  if (display.innerHTML.length >= 19) {
+  if (display.innerHTML.length >= 18) {
     return;
   }
   if (toggle) {
@@ -21,7 +21,7 @@ function op(a, b) {
 
 function num(number) {
   temp.push(number);
-  if (display.innerHTML.length >= 19) {
+  if (display.innerHTML.length >= 18) {
     return;
   }
   if (display.innerHTML == "0") {
