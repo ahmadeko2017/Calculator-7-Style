@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/tooltip.css" />
     <title>Calculator</title>
   </head>
   <body>
@@ -48,7 +50,14 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="dock">
+        <div class="tooltip" id="dock-calc" onclick="minimize()">
+          <img src="./data/calculator.png" alt="calculator" />
+          <span class="tooltiptext">Calculator</span>
+        </div>
+      </div>
+    </footer>
     <script src="./js/calc.js"></script>
     <script src="./js/windows.js"></script>
   </body>

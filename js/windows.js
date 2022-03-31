@@ -52,6 +52,6 @@ function dragElement(elmnt) {
 }
 
 function minimize() {
-  let min = document.querySelector("div.calc");
+  let min = document.getElementById("calcWin");
   min.classList.toggle("minimize");
 }
