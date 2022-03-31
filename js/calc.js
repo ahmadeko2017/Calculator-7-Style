@@ -1,10 +1,11 @@
 let display = document.getElementById("calc-screen");
+let secScreen = document.getElementById("sec-screen");
 let temp = [];
 let toggle = true;
-let counter = 0;
 
 function op(a, b) {
-  if (counter >= 18) {
+  if (display.innerHTML.length >= 19) {
+    return;
   }
   if (toggle) {
     display.innerHTML += a;
@@ -16,22 +17,29 @@ function op(a, b) {
     temp.push(b);
   }
   toggle = false;
-  counter++;
 }
 
 function num(number) {
-  toggle = true;
   temp.push(number);
-  if (display.innerHTML === "0") {
+  if (display.innerHTML.length >= 19) {
+    return;
+  }
+  if (display.innerHTML == "0") {
     display.innerHTML = number;
+    temp = [number];
   } else {
     display.innerHTML += number;
   }
+  secScreen.innerHTML = eval(temp.join(""));
+  secScreen.style.display = "block";
+  toggle = true;
 }
 
 function ac() {
   display.innerHTML = "0";
   temp = [0];
+  counter = 0;
+  secScreen.style.display = "none";
 }
 
 function del() {
@@ -41,15 +49,20 @@ function del() {
   } else {
     display.innerHTML = display.innerHTML.slice(0, -1);
     temp = temp.slice(0, -1);
+    counter--;
   }
+  secScreen.style.display = "none";
 }
 
 function perc() {
   display.innerHTML += "%";
   temp.push("/100");
+  secScreen.innerHTML = eval(temp.join(""));
+  secScreen.style.display = "block";
 }
 
 function calc() {
   display.innerHTML = eval(temp.join(""));
   temp = [eval(temp.join(""))];
+  secScreen.style.display = "none";
 }
