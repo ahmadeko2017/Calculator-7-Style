@@ -1,15 +1,6 @@
 # Calculator-11-Style
 
-<!DOCTYPE html>
-<html lang="en">
-  <head> </head>
-  <body>
-    <picture style="float: right">
-      <img src="README/w11-dark.JPG" alt="Tampilan Kalkukator Mode Gelap" style="height: 300px" />
-      <img src="README/w11-light.JPG" alt="Tampilan Kalkukator Mode Terang" style="height: 300px" />
-    </picture>
-  </body>
-</html>
+<img src="README/w11.JPG" alt="Tampilan Kalkukator Mode Gelap" style="height: 300px" />
 
 Kalkulator ini merupakan penugasan dari pelatihan Fresh Graduade Academy - Front End Developer. Kalkulator ini dibuat menggunakan vanila HTML&CSS serta JavaScript. 
 
