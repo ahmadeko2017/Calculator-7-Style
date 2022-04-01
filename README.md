@@ -1,6 +1,6 @@
 # Calculator-11-Style
 
-<picture style="float: left;">
+<picture style="float: right;">
   <img src="README/w11-dark.JPG" alt="Tampilan Kalkukator Mode Gelap" style="width: 200px;">
   <img src="README/w11-light.JPG" alt="Tampilan Kalkukator Mode Terang" style="width: 200px;">
 </picture>
