@@ -2,8 +2,9 @@
 
 Kalkulator ini merupakan penugasan dari pelatihan Fresh Graduade Academy - Front End Developer. Kalkulator ini dibuat menggunakan vanilla HTML&CSS serta JavaScript. 
 
-![Tampilan Kalkukator Light](README/w11-light.JPG "Mode Terang")
-![Tampilan Kalkukator Dark](README/w11-dark.JPG "Mode Gelap")
+
+<img src="README/w11-light.JPG" alt="Tampilan Kalkukator Light" width="200"/>
+<img src="README/w11-dark.JPG" alt="Tampilan Kalkukator Dark" width="200"/>
 
 Fitur kalkulator :
 - Kalkulator Basic
