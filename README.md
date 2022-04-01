@@ -3,8 +3,8 @@
 Kalkulator ini merupakan penugasan dari pelatihan Fresh Graduade Academy - Front End Developer. Kalkulator ini dibuat menggunakan vanilla HTML&CSS serta JavaScript. 
 
 
-<img src="README/w11-light.JPG" alt="Tampilan Kalkukator Light" width="200" style="display: flex;" />
-<img src="README/w11-dark.JPG" alt="Tampilan Kalkukator Dark" width="200" style="display: flex;" />
+<img src="README/w11-light.JPG" alt="Tampilan Kalkukator Light" style="width:200px; display: flex;" />
+<img src="README/w11-dark.JPG" alt="Tampilan Kalkukator Dark" style="width:200px; display: flex;" />
 
 Fitur kalkulator :
 - Kalkulator Basic
