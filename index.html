@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Memuat css style pada masing masing bagian, css saya pisah sesuai judul untuk mempermudak dalam menemukan selector.  -->
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/tooltip.css" />
@@ -12,9 +15,12 @@
   <body>
     <header></header>
     <main>
+      <!-- Merupakan container dari kalkulator supaya lebih mudah untuk digeser. -->
       <div class="win" id="calcWin">
         <div class="nav" id="calcWinHeader">
+          <!-- Merupakan judul dari jendela -->
           <p></p>
+          <!-- Navigasi jendela yang berisi maximize, minimize, dan exit. -->
           <div class="nav-btn">
             <button class="btn-win min" id="minimize" onclick="minimize()">-</button>
             <button class="btn-win disabled max" disabled id="maximize">+</button>
@@ -23,9 +29,12 @@
         </div>
         <div class="calc">
           <div class="display">
+            <!-- Layar utama -->
             <p id="calc-screen">0</p>
+            <!-- Layar kedua -->
             <p id="sec-screen">0</p>
           </div>
+          <!-- Berisi kumpulan button untuk kalkualtor. Disini saya masih menggunakan on<event> supaya lebih sederhana.  -->
           <div class="grid">
             <button class="btn" id="ac" onclick="ac()">Ac</button>
             <button class="btn" id="del" onclick="del()">Del</button>
@@ -52,6 +61,7 @@
       </div>
     </main>
     <footer>
+      <!-- Kode html untuk dock. -->
       <div class="dock">
         <div class="tooltip" id="dock-calc" onclick="minimize()">
           <img src="./data/calculator.png" alt="calculator" />

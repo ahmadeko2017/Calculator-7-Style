@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Mengatur body dari html dengan menambahkan background. */
 body {
   overflow: hidden;
   height: 100vh;
@@ -17,11 +18,13 @@ body {
   transition: all 1s;
 }
 
+/* Mengubah background ketika tema diubah ke dark-mode. */
 .darkMode {
   background-image: url("../data/w11-Dark.jpg");
   transition: all 1s;
 }
 
+/* Menambahkan efek glass pada jendela. */
 .win {
   position: absolute;
   top: 50vh;
@@ -30,21 +33,24 @@ body {
   border: 1px solid rgb(0, 0, 0, 0.1);
   background-color: rgba(147, 94, 19, 0);
   border-radius: 5px;
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px); /* Semakin besar px semakin blur. */
+  -webkit-backdrop-filter: blur(9px); /* Semakin besar px semakin blur. */
   transform: translate(-110px, -180px);
 }
 
+/* Menambahkan shadow ketika pointer berada di jendela. */
 .win:hover {
   box-shadow: 0px 0px 10px 5px rgba(26, 1, 185, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Mengubah background ketika dark-mode dinyalakan. */
 .win-dark {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Mengatur style kalkulator. */
 .calc {
   display: flex;
   flex-direction: column;
@@ -53,10 +59,12 @@ body {
   transition: all 1s;
 }
 
+/* Menghilangkan elemen ketika kelas ini dipanggil */
 .minimize {
   display: none;
 }
 
+/* Menyesuaikan posisi judul jendela. */
 .nav p {
   transform: translate(8px, -2px);
 }
@@ -72,6 +80,7 @@ body {
   margin-top: -5px;
 }
 
+/* Mengatur style untuk navigasi button. */
 .btn-win {
   width: 20px;
   height: 20px;
