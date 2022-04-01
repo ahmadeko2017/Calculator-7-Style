@@ -12,5 +12,5 @@ Fitur kalkulator :
 - Fitur drag sehingga dapat digeset sesuai keinginan
 - Memiliki dock yang dapat menampilkan dan menyembunyikan kalkulator.
 
-Hasil dari kalkualtor ini dapat dilihat di laman dibawah ini :
+Kalkualtor ini dapat dilihat pada laman dibawah ini :
 - https://ahmadeko2017.github.io/Calculator-7-Style/
